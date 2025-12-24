@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>植物大战僵尸</title>
+    <link rel="stylesheet" href="pvz_style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="sun-counter">
+                <span>☀️ 阳光:</span>
+                <span id="sun-count">100</span>
+            </div>
+            <div class="score-counter">
+                <span>🏆 得分:</span>
+                <span id="score">0</span>
+            </div>
+            <div class="wave-counter">
+                <span>🌊 波次:</span>
+                <span id="wave">1</span>
+            </div>
+        </div>
+
+        <div class="plant-bar">
+            <div class="plant-card" data-plant="sunflower" data-cost="50">
+                <div class="plant-icon">🌻</div>
+                <div class="plant-cost">50</div>
+            </div>
+            <div class="plant-card" data-plant="peashooter" data-cost="100">
+                <div class="plant-icon">🌱</div>
+                <div class="plant-cost">100</div>
+            </div>
+            <div class="plant-card" data-plant="wallnut" data-cost="50">
+                <div class="plant-icon">🥔</div>
+                <div class="plant-cost">50</div>
+            </div>
+            <div class="plant-card" data-plant="cherrybomb" data-cost="150">
+                <div class="plant-icon">🍒</div>
+                <div class="plant-cost">150</div>
+            </div>
+        </div>
+
+        <div class="game-board" id="game-board">
+        </div>
+
+        <div class="game-over" id="game-over" style="display: none;">
+            <h2>游戏结束!</h2>
+            <p>最终得分: <span id="final-score">0</span></p>
+            <button onclick="restartGame()">重新开始</button>
+        </div>
+
+        <div class="start-screen" id="start-screen">
+            <h1>🌻 植物大战僵尸 🧟</h1>
+            <p>选择植物来防御僵尸的进攻!</p>
+            <button onclick="startGame()">开始游戏</button>
+        </div>
+    </div>
+
+    <script src="pvz_game.js"></script>
+</body>
+</html>
