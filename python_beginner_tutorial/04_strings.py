@@ -33,4 +33,4 @@ print("\n字符串格式化:")
 name = "Alice"
 age = 25
 print(f"  f-string: {name} is {age} years old")
-print(f"  format: {} is {} years old".format(name, age))
+print("  format: {} is {} years old".format(name, age))
